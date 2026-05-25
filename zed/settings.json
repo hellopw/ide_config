@@ -1,0 +1,339 @@
+// Zed settings
+//
+// For information on how to configure Zed, see the Zed
+// documentation: https://zed.dev/docs/configuring-zed
+//
+// To see all of Zed's default settings without changing your
+// custom settings, run `zed: open default settings` from the
+// command palette (cmd-shift-p / ctrl-shift-p)
+{
+  "completions": {
+    "lsp": false,
+  },
+  "cli_default_open_behavior": "existing_window",
+  "agent_ui_font_size": 14.0,
+  "selection_highlight": true,
+  "current_line_highlight": "all",
+  "hide_mouse": "on_typing_and_action",
+  "cursor_shape": "bar",
+  "agent_buffer_font_size": 13.0,
+  "ui_font_weight": 300.0,
+  "ui_font_family": "JetBrainsMono Nerd Font Mono",
+  "buffer_font_family": "JetBrainsMono Nerd Font Mono",
+  "buffer_font_fallbacks": ["Microsoft YaHei UI"],
+  "preview_tabs": {
+    "enabled": false,
+  },
+  "tabs": {
+    "file_icons": false,
+    "git_status": true,
+  },
+  "title_bar": {
+    "show_menus": false,
+    "show_branch_status_icon": false,
+  },
+  "status_bar": {
+    "show_active_file": false,
+  },
+  "diff_view_style": "split",
+  "language_models": {
+    "openai_compatible": {
+      "panther": {
+        "api_url": "http://10.18.15.108:2356/v1",
+        "available_models": [
+          {
+            "name": "gpt-5.4",
+            "max_tokens": 200000,
+            "max_output_tokens": 32000,
+            "max_completion_tokens": 200000,
+            "capabilities": {
+              "tools": true,
+              "images": false,
+              "parallel_tool_calls": true,
+              "prompt_cache_key": true,
+              "chat_completions": true,
+            },
+          },
+          {
+            "name": "qwen3.6-plus",
+            "max_tokens": 200000,
+            "max_output_tokens": 32000,
+            "max_completion_tokens": 200000,
+            "capabilities": {
+              "tools": true,
+              "images": false,
+              "parallel_tool_calls": true,
+              "prompt_cache_key": true,
+              "chat_completions": true,
+            },
+          },
+          {
+            "name": "glm-5",
+            "max_tokens": 200000,
+            "max_output_tokens": 32000,
+            "max_completion_tokens": 200000,
+            "capabilities": {
+              "tools": true,
+              "images": false,
+              "parallel_tool_calls": true,
+              "prompt_cache_key": true,
+              "chat_completions": true,
+            },
+          },
+        ],
+      },
+    },
+  },
+  "project_panel": {
+    "git_status_indicator": true,
+    "dock": "right",
+  },
+  "outline_panel": {
+    "dock": "left",
+  },
+  "collaboration_panel": {
+    "button": false,
+    "dock": "left",
+  },
+  "terminal": {
+    "dock": "bottom",
+    "show_count_badge": true,
+    "env": {
+      "LANG": "en_US.UTF-8",
+      "LC_ALL": "en_US.UTF-8",
+    },
+    "toolbar": {
+      "breadcrumbs": false,
+    },
+    "font_weight": 200.0,
+    "font_size": 12.0,
+    "font_fallbacks": ["Microsoft YaHei UI"],
+    "shell": "system",
+  },
+  "agent_servers": {
+    "codex-acp": {
+      "type": "registry",
+    },
+    "claude-acp": {
+      "type": "registry",
+      "env": {
+        "CLAUDE_CODE_EXECUTABLE": "D:\\Applications\\Scoop\\apps\\claude-code\\current\\claude.exe",
+      },
+    },
+  },
+  "restore_on_startup": "launchpad",
+  "inlay_hints": {
+    "enabled": false,
+  },
+  "vim": {
+    "toggle_relative_line_numbers": true,
+  },
+  "minimap": {
+    "show": "auto",
+  },
+  "audio": {
+    // "experimental.legacy_audio_compatible": false,
+    // "experimental.denoise": false,
+    // "experimental.auto_speaker_volume": false,
+  },
+  "diagnostics": {
+    "lsp_pull_diagnostics": {
+      "enabled": false,
+    },
+  },
+  "relative_line_numbers": "enabled",
+  "gutter": {
+    "line_numbers": true,
+  },
+  "which_key": {
+    "enabled": false,
+  },
+  "session": {
+    "trust_all_worktrees": true,
+  },
+  "edit_predictions": {
+    "provider": "none",
+  },
+  "enable_language_server": true,
+  "icon_theme": {
+    "mode": "light",
+    "light": "Catppuccin Latte",
+    "dark": "Catppuccin Mocha",
+  },
+  "git_panel": {
+    "file_icons": true,
+    "collapse_untracked_diff": true,
+    "fallback_branch_name": "main",
+    "status_style": "icon",
+    "show_count_badge": true,
+    "dock": "right",
+    "tree_view": true,
+  },
+  "ensure_final_newline_on_save": false,
+  "remove_trailing_whitespace_on_save": false,
+  "format_on_save": "off",
+  "auto_update": false,
+  "context_servers": {
+    "mcp-server-context7": {
+      "enabled": false,
+      "remote": false,
+      "settings": {},
+    },
+    "db_utils": {
+      "enabled": false,
+      "command": "d:/sdk/python/python311/python.exe",
+      "args": ["d:/Code/opencode/test1/mcp_server.py"],
+      "env": {},
+    },
+    "mcp-server-firecrawl": {
+      "enabled": true,
+      "settings": {},
+    },
+  },
+  "ssh_connections": [
+    {
+      "host": "152-binwang",
+      "args": [],
+      "projects": [
+        {
+          "paths": ["/home/binwang"],
+        },
+        {
+          "paths": ["/home/binwang/src/panther-auth"],
+        },
+        {
+          "paths": ["/home/binwang/src/panther-oncall"],
+        },
+        {
+          "paths": ["/home/binwang/src/panther-redis"],
+        },
+      ],
+    },
+    {
+      "host": "152-root",
+      "args": [],
+      "projects": [],
+    },
+  ],
+  "base_keymap": "JetBrains",
+  "agent": {
+    "default_height": 350.0,
+    "sidebar_side": "left",
+    "dock": "left",
+    "default_profile": "write",
+    "default_model": {
+      "provider": "panther",
+      "model": "qwen3.6-plus",
+    },
+  },
+  "vim_mode": true,
+  "ui_font_size": 14.0,
+  "buffer_font_size": 14.0,
+  "languages": {
+    "JSON": {
+      "enable_language_server": false
+    },
+    "Java": {
+      "show_edit_predictions": false,
+      "enable_language_server": false
+    }
+  },
+  "theme": {
+    "mode": "dark",
+    "light": "macOS Classic Light",
+    "dark": "Ayu Dark",
+  },
+  "lsp": {
+    "jdtls-deprecated": {
+      "binary": {
+        "path": "D:\\Applications\\Scoop\\apps\\jdtls\\current\\bin\\jdtls.bat",
+        // "arguments": [],
+        // "env": {},
+        "ignore_system_version": true,
+      },
+      "initialization_options": {
+        "bundles": [],
+        "workspaceFolders": ["."],
+        "settings": {
+          "java": {
+            "home": "D:\\Sdk\\Java\\jdk-21.0.2",
+            "errors": {
+              "incompleteClasspath": {
+                "severity": "warning",
+              },
+            },
+            "configuration": {
+              "updateBuildConfiguration": "interactive",
+              "maven": {
+                "userSettings": null,
+              },
+            },
+            "trace": {
+              "server": "verbose",
+            },
+            "import": {
+              "gradle": {
+                "enabled": true,
+              },
+              "maven": {
+                "enabled": true,
+              },
+              "exclusions": [
+                "**/node_modules/**",
+                "**/.metadata/**",
+                "**/archetype-resources/**",
+                "**/META-INF/maven/**",
+                "/**/test/**",
+              ],
+            },
+            "jdt": {
+              "ls": {
+                "lombokSupport": {
+                  "enabled": false, // Set this to true to enable lombok support
+                },
+              },
+            },
+            "referencesCodeLens": {
+              "enabled": false,
+            },
+            "signatureHelp": {
+              "enabled": false,
+            },
+            "implementationsCodeLens": {
+              "enabled": false,
+            },
+            "format": {
+              "enabled": true,
+            },
+            "saveActions": {
+              "organizeImports": false,
+            },
+            "contentProvider": {
+              "preferred": null,
+            },
+            "autobuild": {
+              "enabled": false,
+            },
+            "completion": {
+              "favoriteStaticMembers": [
+                "org.junit.Assert.*",
+                "org.junit.Assume.*",
+                "org.junit.jupiter.api.Assertions.*",
+                "org.junit.jupiter.api.Assumptions.*",
+                "org.junit.jupiter.api.DynamicContainer.*",
+                "org.junit.jupiter.api.DynamicTest.*",
+              ],
+              "importOrder": ["java", "javax", "com", "org"],
+            },
+          },
+        },
+      },
+    }
+    // "kotlin-lsp": {
+    //   "binary": {
+    //     "path": "C:\\Users\\binwang219962\\Downloads\\kotlin-lsp-windows-x86_64\\kotlin-lsp-windows-x86_64.exe",
+    //     "arguments": ["--stdio"],
+    //   },
+    // },
+  },
+}
